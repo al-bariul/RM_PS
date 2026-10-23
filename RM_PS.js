@@ -217,6 +217,46 @@ var timeConversion = function (s) {
   return formattedHour + time.slice(2);
 };
 
+// 21. String Repeat
+// Q: Return a string repeated exactly n times.
+var repeatStr = function (n, s) {
+  return s.repeat(n);
+};
+
+// 22. Reversed Strings
+// Q: Return the given string with its characters in reverse order.
+var solution = function (str) {
+  return str.split("").reverse().join("");
+};
+
+// 23. Sum of Positive
+// Q: Return the sum of all positive numbers in an array. Return 0 if there are none.
+var positiveSum = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+};
+
+// 24. Grasshopper - Summation
+// Q: Return the sum of all integers from 1 through n.
+var summation = function (num) {
+  let sum = 0;
+  for (let i = 1; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
+};
+
+// 25. Convert a Boolean to a String
+// Q: Convert a boolean value into the string "true" or "false".
+var booleanToString = function (b) {
+  return String(b);
+};
+
 // // 01
 // console.log(solveMeFirst(2, 3));
 
@@ -281,3 +321,19 @@ var timeConversion = function (s) {
 
 // // 20
 // console.log(timeConversion("07:05:45PM"));
+
+// // 21
+// console.log(repeatStr(3, "ha"));
+
+// // 22
+// console.log(solution("world"));
+
+// // 23
+// console.log(positiveSum([1, -4, 7, 12]));
+
+// // 24
+// console.log(summation(8));
+
+// // 25
+// console.log(booleanToString(true));
+
